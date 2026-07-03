@@ -5,14 +5,16 @@ add.addEventListener("click", function(event){
 
     const list = document.getElementById("list");
     const li = document.createElement("li");
-    li.textContent = stud.value;
+    li.classList.add("dot");
     if(stud.value.trim() == ""){
         return
     }
+    li.textContent = stud.value;
     list.append(li);
     stud.value = "";
 
     const del = document.createElement("button");
+    del.classList.add("del");
     del.textContent = "Видалити";
     li.append(del);
 
