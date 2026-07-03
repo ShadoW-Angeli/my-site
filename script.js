@@ -13,10 +13,14 @@ add.addEventListener("click", function(event){
     list.append(li);
     stud.value = "";
 
+    const flex = document.createElement("div");
+    flex.classList.add("flex");
+    li.append(flex);
+    
     const del = document.createElement("button");
     del.classList.add("del");
     del.textContent = "Видалити";
-    li.append(del);
+    flex.append(del);
 
     del.addEventListener("click", function(){
         li.remove();
