@@ -10,7 +10,7 @@ form{
    display: flex;
    flex-direction: column;
   align-items: center;
-    font-size: large;
+    font-size: 1rem;
 }
 label{
     text-align: center;
@@ -52,15 +52,57 @@ h2{
 }
 .dot{
     margin-bottom: 8px;
+    font-size: 18px;
+}
+.flex{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -120px;
 }
 .del{
-    margin-left: 30px;
+    margin-left: 50px;
     background-color:#a0225f;
     border: 1px, solid, #430D27;
     border-radius: 5px;
+    padding: 4px 10px;
+
     transition: transform 0.2s ease;
 }
 .del:active{
     background-color:#c72674;
     transform: scale(1.3);
+}
+@media(max-width:768px){
+    h1{
+        font-size: 1.75rem;
+    }
+    input{
+        padding: 1px;
+        max-width: 140px;
+        margin-bottom: 10px;
+    }
+    #add{
+        width: 60px;
+        padding: 2px;
+    }
+    #add:active{
+        transform: scale(1.2);
+    }
+    h2{
+        text-align: center;
+        font-size: 1.35rem;
+        margin-left:0;
+    }
+    .dot{
+        font-size: 16px;
+    }
+    .flex{
+        margin-left:0;
+        justify-content: end;
+    }
+    .del{
+        padding:2px 4px;
+    }
 }
